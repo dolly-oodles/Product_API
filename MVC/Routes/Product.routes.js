@@ -3,7 +3,7 @@ import { createProduct, deleteProductById, getProductById, getAllProducts, updat
 
 const productRouter = Router();
 
-productRouter.post('/createProduct',createProduct);
+productRouter.post('/createproduct',createProduct);
 
 productRouter.get('/getproducts',getAllProducts);
 
