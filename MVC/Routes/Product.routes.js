@@ -3,14 +3,14 @@ import { createProduct, deleteProductById, getProductById, getAllProducts, updat
 
 const productRouter = Router();
 
-productRouter.post('/createProduct', createProduct);
+productRouter.post('/createProduct',createProduct);
 
-productRouter.get('/getproducts', getAllProducts);
+productRouter.get('/getproducts',getAllProducts);
 
-productRouter.get('getById/:id',getProductById);
+productRouter.get('/getById/:id',getProductById);
 
-productRouter.delete('/deleteproduct/:id', deleteProductById);
+productRouter.delete('/deleteproduct/:id',deleteProductById);
 
-productRouter.put('/updateproduct/:id', updateProductById);
+productRouter.put('/updateproduct/:id',updateProductById);
 
 export default productRouter;

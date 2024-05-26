@@ -10,12 +10,12 @@ const port = process.env.PORT || 9000;
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(express.json());
-app.use('/api/',productRouter);
+app.use('/api',productRouter);
 app.get('/', (req,res) => {
     res.send('Welcome to Products APIs');
 });
 app.use((req, res) =>{
-    res.status(404).send("API not found!..Please check our documentation for more information at localhost:3300/api-docs")
+    res.status(404).send("API not found!")
 })
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
